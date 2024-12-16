@@ -24,7 +24,7 @@ body {
     color: rgba(214, 221, 230, 1);
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 400;
     transition: color 0.3s ease;
   }
@@ -35,7 +35,7 @@ body {
   
   .navbar .logo {
     
-    font-size: 35px;
+    font-size: 2.5vw;
     font-weight: bold;
     color:rgba(214, 221, 230, 1);
     flex-grow: 1;
@@ -47,7 +47,7 @@ body {
     color: rgba(214, 221, 230, 1);
     text-decoration: none;
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 1vw;
     font-weight: 400;
     transition: color 0.3s ease;
 
@@ -82,7 +82,14 @@ body {
     border-radius: 5%;
   }
   .cell-text1{
-    font-size: medium;
+    margin-top: 0;
+    font-size: 1.5vw;
+  }
+  .cell-text2{
+    line-height: 1%;
+    opacity: 0.7;
+    margin-bottom: 5vh;
+    font-size: 1vw;
   }
 
   .serv-overview {
@@ -96,7 +103,7 @@ body {
 .serv-overview h2 {
     text-align: left;
     margin-right: 10%;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: Bold;
     color: #c9d1d9;
 }
@@ -112,24 +119,25 @@ body {
 }
 .serv{
     align-content: left;
-    font-size: large;
+    font-size: 1.5vw;
 }
 .about{
+    font-size: 1rem;
     display: flex;
     max-width: 90%;
     margin: 5% auto;
     padding: 0 20%;
 }
 .about-text{
-    font-size:xxx-large;
+    font-size:3vw;
     text-align: center;
 }
-/* CSS for positioning only */
+
 
 .proj-ref-link {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -139,7 +147,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://s3-alpha-sig.figma.com/img/2a84/76eb/da84d439cad8afe91575050b1dbd0003?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rl6MIXZSRFpEBUqXuLKb0DqzOkW3xo9b7JDrucNNpIpdJOfaUYQGVpp3SFL2vNajq792Kxt1odhfckV9SvtU22HsRrynRX0DOIcj2zj1ddSsaktmCXcjYLF79y7weqaVNFdZpJwsxBVoOZsedffckflqM09iODBu65ElO5h55Vb2zUa2dWekE5449RKsQSEspxp2-DAXpxVUWdSrgF7E-EAFpR9~JORsubtkGtsEMGcmjLMyvsCMel~LrBybAfMW0pZPRtueNhRXrkzAltNO1K1v-~a94Kv9wzAnMVczeAoj4pa91hDTNrJJnfstb6QjClAKGCTsjhHvjVvv7FIoZg__');
+    background-image: url('Assets/A vibrant futuristic cityscape illuminated by neon lights with sleek, towering buildings and digital grids creating a captivating depth in the scene..png');
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -151,7 +159,7 @@ body {
 .ref-link-content {
     color:white;
     position: relative;
-    z-index: 2; /* Ensures content is above the background */
+    z-index: 2;
     max-width: 90%;
     margin-inline-start: 10%;
     text-align: left;
@@ -161,15 +169,15 @@ body {
     background: rgba(8, 15, 23, 1);
     border: none;
     color: rgba(214, 221, 230, 1);
-    font-size:larger;
+    font-size:2vw;
     padding: 0.75rem 1.5rem;
     border-radius: 10%;
 }
 .proj-ref-head{
-    font-size:3.5rem ;
+    font-size:3.5vw ;
 }
 .proj-ref-text{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 
@@ -184,11 +192,13 @@ body {
 .touch .touch-head {
     text-align: left;
     margin-right: 10%;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: Bold;
     color: #c9d1d9;
     white-space: nowrap;
 }
 .touch .touch-text{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
+
+
