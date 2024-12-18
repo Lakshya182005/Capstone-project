@@ -200,5 +200,36 @@ body {
 .touch .touch-text{
     font-size: 1.5vw;
 }
+.onboarding-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.instructions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  height: 20vh;
+  
+}
+
+.number-input{
+  margin-bottom:10%;
+}
+
+.number{
+  width: 2.5vw;
+  height: 3vw;
+  margin:0 0.5vw;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+}
 
 
