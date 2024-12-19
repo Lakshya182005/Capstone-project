@@ -62,7 +62,7 @@ button{
     border-radius: 20px;
     border: 1px solid rgba(256, 256, 256, 0.5);
   }
-  .proj-overview-grid{
+  #proj-overview-grid{
     margin:10% auto ;
     height: auto;
     max-width: 90%;
@@ -117,7 +117,7 @@ button{
     align-content: left;
     font-size: 1.5vw;
 }
-.about{
+#about{
     display: flex;
     max-width: 90%;
     margin: 5% auto;
@@ -194,7 +194,8 @@ button{
 .touch .touch-text{
     font-size: 1.5vw;
 }
-.onboarding-form{
+
+#onboarding-form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -220,10 +221,10 @@ button{
 .number{
   width: 35px;
   height: 40px;
-  margin:0 0.5vw;
+  margin:20px 0.5vw;
   background: rgba(255, 255, 255, 0.04);
   border: 0.1vw solid rgba(256, 256, 256, 0.2);
-  border-radius: 0.4vw;
+  border-radius: 5px;
   color: rgba(214, 221, 230, 0.2);
   font-size:20px;
   text-align: center;
@@ -233,6 +234,7 @@ button{
 .buttons{
   display: flex;
   flex-direction: column;
+  margin:none;
 }
 .form-submit{
   background-color: rgb(167, 238, 67);
@@ -272,7 +274,7 @@ button{
   border: 0.1vw solid rgba(256, 256, 256, 0.2);
 }
 @media only screen and (max-width: 786px){
-  .proj-overview-grid{
+  #proj-overview-grid{
     grid-template-columns: 1fr 1fr;
     column-gap: 5vw;
   }
@@ -327,7 +329,7 @@ button{
     font-size: 18px;
   }
 
-  .about{
+  #about{
     margin:75px auto
   }
   .proj-ref-link-bgimg{
