@@ -11,6 +11,7 @@ button{
 
   .navbar {
     display: flex;
+    position:relative;
     justify-content: space-between;
     align-items: center;
     background: rgba(162, 210, 96,0.1);
@@ -21,8 +22,6 @@ button{
     height: 3vw;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   }
-  
-
   .navbar a {
     color: rgba(214, 221, 230, 1);
     text-decoration: none;
@@ -30,13 +29,16 @@ button{
     font-size: 1.5vw;
     font-weight: 400;
   }
-  
+  .navbar .inlink{
+    margin-left:0;
+  }
   .navbar .logo {
     font-size: 2.5vw;
     font-weight: Bold;
     color:rgba(214, 221, 230, 1);
     text-align: center;
-
+    position:absolute;
+    margin:43%;
 
   }
   .navbar .contact{
@@ -49,7 +51,7 @@ button{
   
   .welcome{
     text-align: center;
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .welcome-img{
     display: flex;
@@ -66,7 +68,6 @@ button{
     max-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     column-gap: 3rem;
     row-gap: 1rem;
   }
@@ -99,15 +100,17 @@ button{
     font-size: 3vw;
     font-weight: Bold;
     color: #c9d1d9;
+    width:50%;
 }
 
 
-.serv-grid {
+.serv-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: left;
     column-gap: 20%;
     row-gap: none;
+    width:50%;
 
 }
 .serv{
@@ -115,11 +118,9 @@ button{
     font-size: 1.5vw;
 }
 .about{
-    font-size: 1rem;
     display: flex;
     max-width: 90%;
     margin: 5% auto;
-    padding: 0 20%;
 }
 .about-text{
     font-size:3vw;
@@ -139,7 +140,7 @@ button{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-image: url('Assets/A vibrant futuristic cityscape illuminated by neon lights with sleek, towering buildings and digital grids creating a captivating depth in the scene..png');
     background-size: cover;
     background-position: center;
@@ -198,7 +199,7 @@ button{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height:clamp(0,90vw,90vh);
 }
 .instructions{
   display: flex;
@@ -206,7 +207,7 @@ button{
   justify-content: center;
   align-items: center;
   line-height: 0;
-  height: 20vh;
+  height: 20vw;
 
 }
 
@@ -215,14 +216,14 @@ button{
 }
 
 .number{
-  width: 2.5vw;
-  height: 3vw;
+  width: 35px;
+  height: 40px;
   margin:0 0.5vw;
   background: rgba(255, 255, 255, 0.04);
   border: 0.1vw solid rgba(256, 256, 256, 0.2);
   border-radius: 0.4vw;
   color: rgba(214, 221, 230, 0.2);
-  font-size:1.5vw;
+  font-size:20px;
   text-align: center;
 
 }
@@ -233,15 +234,15 @@ button{
 }
 .form-submit{
   background-color: rgb(167, 238, 67);
-  height:2vw;
+  height:30px;
   border: none;
   border-radius: 0.3vw;
-  font-size: 1vw;
+  font-size: 15px;
 }
 .skip{
   display: flex;
   justify-content: center;
-  font-size:1vw;
+  font-size:15px;
   text-align:center;
   color: rgb(167, 238, 67);
   text-align: center;
@@ -268,6 +269,75 @@ button{
   border-radius: 0.8vw;
   border: 0.1vw solid rgba(256, 256, 256, 0.2);
 }
+@media only screen and (max-width: 786px){
+  .proj-overview-grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5vw;
+  }
+  .cell-text1{
+    font-size: 14px;
+  }
+  .cell-text2{
+    font-size: 10px;
+  }
+  .serv-overview h2{
+    font-size: 18px;
+  }
+  .serv{
+    font-size: 10px;
+  }
+  .proj-ref-head{
+    font-size: 18px;
+  }
+  .proj-ref-text{
+    font-size: 10px;
+  }
+  .ref-link{
+    font-size: 10px;
+  }
+  .touch{
+    flex-direction: column;
+    margin: 70px auto;
+  }
+  .touch .touch-head{
+    font-size: 25px;
+  }
+  .touch .touch-text{
+    font-size: 10px;
+  }
+  .proj-overview-grid{
+    margin-top: 100px;
+  }
+  .navbar{
+    height: 20px;
+  }
+  .navbar .logo{
+    font-size: large;
+  }
+  .navbar a{
+    font-size: 8px;
+    margin:2px;
+  }
+  .navbar .contact{
+    font-size: 8px;
+  }
+  .about-text{
+    font-size: 18px;
+  }
 
+  .about{
+    margin:75px auto
+  }
+  .proj-ref-link-bgimg{
+    height: 50vh;
+  }
+  .proj-ref-link{
+    height: 50vh;
+  }
+  .onboarding-form{
+    height: 90vw;
+    margin-bottom: 5vw;
+  }
 
+}
 
